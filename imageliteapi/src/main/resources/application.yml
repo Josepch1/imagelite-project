@@ -1,0 +1,36 @@
+spring:
+  datasource:
+    url: jdbc:postgresql://localhost:5432/imagelite
+    username: postgres
+    password: postgres
+  jpa:
+    database: POSTGRESQL
+    hibernate:
+      ddl-auto: update
+    show-sql: true
+  servlet:
+    multipart:
+      max-file-size: 10MB
+      max-request-size: 10MB
+
+---
+# Production profile
+
+spring:
+  config:
+    activate:
+      on-profile:
+      - production
+  datasource:
+    url: jdbc:postgresql://${DB_HOST}:5432/imagelite
+    username: postgres
+    password: postgres
+  jpa:
+    database: POSTGRESQL
+    hibernate:
+      ddl-auto: update
+    show-sql: true
+  servlet:
+    multipart:
+      max-file-size: 10MB
+      max-request-size: 10MB
