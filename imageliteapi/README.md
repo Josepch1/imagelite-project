@@ -13,22 +13,22 @@ Welcome to **ImageLiteAPI**! This project is a demo application built with Sprin
 
 1. Clone the repository:
   ```sh
-  git clone https://github.com/josepch1/imageliteapi.git
+  git clone https://github.com/Josepch1/imagelite-project.git
   ```
 2. Navigate to the project directory:
   ```sh
-  cd imageliteapi
+  cd imagelite-project/imageliteapi
   ```
 3. Build the project:
   ```sh
-  mvn clean install
+  ./mvnw clean package
   ```
 
 ### Running the Application
 
 To run the application, use the following command:
 ```sh
-mvn spring-boot:run
+java -jar target/imageliteapi-0.0.1-SNAPSHOT.jar
 ```
 
 The application will start on `http://localhost:8080`.
