@@ -6,8 +6,8 @@ Welcome to **ImageLiteAPI**! This project is a demo application built with Sprin
 
 ### Prerequisites
 
-- Java 17 or higher
-- Maven 3.6.3 or higher
+- Java 23 or higher
+- Maven 3.6.5 or higher
 
 ### Installation
 
